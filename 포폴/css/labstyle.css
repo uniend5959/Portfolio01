@@ -1,0 +1,494 @@
+
+
+@media screen and (min-width: 1200px) {
+  /*헤더*/
+  header{
+    position: relative;
+    background: #a6d2f7;
+    width: 100%;
+    height: 100px;
+    z-index: 2000;
+    box-shadow: 0px 5px 50px -20px #222;
+  }
+
+  .main1{ width: 100%; height: 60vh;}
+  .main-right{ width: 100%; height: 40vh;}
+  .main-right .main2{width: 100%; height: 20vh; background: white;}
+  .main-right .main3{width: 100%; height: 20vh;}
+
+  .fixedinner{
+    position: fixed;
+    top: 0;
+
+  }
+
+
+  .event-top{
+    background: #dc272d;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    font-size: 0.8rem;
+    display: block;
+    z-index: 2001;
+  }
+
+  .lab{
+    display: block;
+  }
+
+.in-nav>a{
+  margin-left: 10px;
+  }
+
+  .nav{
+    margin-left: 20px;
+  }
+  .overay{
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 2000;
+    display: none;
+  }
+  .sub{
+    position: absolute;
+    top: 0;
+    left: 60%;
+    z-index: 2001;
+    background: #a6d2f7;
+    width: 40%;
+    height: 100vh;
+    padding: 10% 0;
+    display: none;
+  }
+
+
+
+  /*메인*/
+  main{
+    position: relative;
+
+  }
+  .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+  .mySwiper1 .swiper-slide>a{
+    color: white;
+    margin-top: 50px;
+    display: block;
+  }
+  .envent-top-btn{
+      position: absolute;
+      top: 8px;
+      right: 20px;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 99;
+  }
+  .envent-top-btn>span{
+    display: block;
+    cursor: pointer;
+  }
+
+
+  .mainWrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .main1{ width: 50%; height: 100vh; }
+  .main-right{ width: 50%; height: 100vh; }
+  .main-right .main2{width: 100%; height: 40vh; background: white;}
+  .main-right .main3{width: 100%; height: 60vh; }
+
+
+  .swiper-img2-one>h1, .swiper-img2-two>h1, .swiper-img2-three>h1{
+    color: #333;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .swiper-img2-one>p, .swiper-img2-two>p, .swiper-img2-three>p{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    line-height: 2rem;
+  }
+
+
+  .button-next>svg, .button-prev>svg{
+    width: 45px;
+    height: 45px;
+  }
+
+  .main3{
+    display: block;
+  }
+
+  /*컨텐츠*/
+  .at1-container{
+    padding: 300px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .at1-list{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 0%;
+  }
+
+  .section{
+    background: white;
+    width: 32%;
+    margin-bottom: 2%;
+  }
+
+
+
+
+  .s-txt.a>p:nth-child(1){
+    border: 2px solid #BAD5E5;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+
+
+  /*컨텐츠2*/
+  .at2-container>div{
+    padding: 500px 0% 300px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .at2-container>div>:nth-child(1){
+    order: 1;
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .at2-container>div>:nth-child(2){
+    order: 2;
+    width: 50%;
+    height: 600px;
+    background: #BAD5E5;
+    padding: 18% 5%;
+  }
+
+
+
+  .at2-container>div>:nth-child(2)>h2{
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    margin-top: 100px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+
+  .at2-container>div>:nth-child(2)>p:nth-child(1){
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+  }
+
+  .at2-container>div>:nth-child(2)>:nth-child(3){
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+
+  .at2-container>div>:nth-child(2)>button{
+     border: none;
+     width: 80%;
+
+  }
+  .at2-container>div>:nth-child(2)>button:hover{
+     background: #ee828d;
+     color: white;
+  }
+
+  /*컨텐츠3*/
+
+
+  .at3-container{
+    background: #BAD5E5;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 300px 0;
+  }
+
+  .at3-container>div{
+    margin: 0 0%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+  }
+
+  .at3-container>div>:nth-child(1){
+    background: url(https://i.imgur.com/5C3fxzr.png);
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .at3-container>div>:nth-child(2){
+    width: 40%;
+    height: 500px;
+    padding: 0% 0;
+    position: relative;
+    background: white;
+  }
+
+  .at3-container>div>:nth-child(2)>p{
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 226px 10px;
+    z-index: 5;
+    color: #333;
+
+  }
+
+
+  .at3-container>div>:nth-child(3){
+    background: url(https://i.imgur.com/MXpXNWi.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+
+  /*리뷰*/
+  .review{
+    background: #BAD5E5;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 300px 0;
+    position: relative;
+  }
+
+  .at4-tit{
+    color: #333;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+
+/*인스타그램*/
+.ingram{
+  background: white;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 300px 0;
+}
+
+
+
+/*푸터*/
+
+footer{
+  border-top: 1px solid #BAD5E5;
+  width: 100%;
+}
+
+.fot-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2% 5%;
+}
+
+.f-top{
+  width: 30%;
+  padding: 0 0;
+}
+
+.f-top>p{
+  font-size: 0.8rem;
+  color: #333;
+  margin-top: 20px;
+  line-height: 1.2rem;
+}
+
+
+.f-tab{
+  border-top: 0px solid #BAD5E5;
+  border-bottom:0px solid #BAD5E5;
+  width: 20%;
+}
+
+.f-navi{
+  display: block;
+  width: 50%;
+}
+
+.f-navi>ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-navi>ul>li>a{
+  display: block;
+  color: #DC272D;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+
+
+.f-tab{
+  padding: 0;
+  position: relative;
+  padding-left: 5%;
+}
+
+.f-tab>p{
+  color: #DC272D;
+}
+.f-btn{
+    display: none;
+    cursor: pointer;
+    padding: 20px 0 0 0;
+    position: absolute;
+    top: 5px;
+    right: 5%;
+  }
+
+  .f-bar1{
+    display:block;
+    width: 14px;
+    height: 2px;
+    background: #DC272D;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .f-bar2{
+    display:block;
+    width: 14px;
+    height: 2px;
+    background: #DC272D;
+    margin: 6px 0;
+    transition: 0.4s;
+    transform: rotate(-90deg) translate(8px, 0px);
+  }
+  .change .f-bar2{
+    transform: rotate(-180deg) translate(0px, 8px);
+  }
+
+  .f-tab-list{
+    display: block;
+  }
+
+  .f-tab-list>p:nth-child(1){
+    color: #DC272D;
+    font-size: 1.4rem;
+    margin: 10px 0;
+  }
+
+  .f-tab-list>p:nth-child(2){
+    color: black;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+
+  .f-tab-list>button{
+    width: 60%;
+    border: 1px solid #DC272D;
+    padding: 10px 5%;
+    border-radius: 40px;
+    color: #DC272D;
+    font-size: 1rem;
+  }
+
+  .f-bottom{
+    width: 100%;
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .f-bottom>ul{
+    display: flex;
+    width: 80%;
+    order: 3;
+  }
+
+  .f-bottom>ul>li>a{
+    font-size: 0.8rem;
+    color: #333;
+    margin-right: 20px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .f-bottom>small{
+    color: black;
+    display: block;
+    margin-bottom: 20px;
+    order: 1;
+  }
+  .f-bottom>p{
+    order: 2;
+  }
+  .f-bottom>p>span{
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+
+}

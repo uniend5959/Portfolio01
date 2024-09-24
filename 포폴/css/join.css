@@ -1,0 +1,552 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px solid silver;
+  font-family: 'Gowun Dodum' !important;
+}
+
+img {
+  width: 100px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #999;
+  letter-spacing: 0.1px;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+h4, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
+
+ul{
+  list-style: none;
+}
+
+a:link { color: #666; text-decoration: none;}
+a:visited { color: #666;}
+a:hover { color: black;}
+a:active { color: black;}
+
+
+
+.introducing:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clear{
+  clear: both;
+}
+
+/*start*/
+
+.wrap{
+  position: relative;
+  background: linear-gradient(160deg, #a6d2f7 0%, #80D0C7 100%);
+  width: 100%;
+  height: 100%;
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.join{
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  z-index: 5;
+  padding: 30px;
+  text-align: center;
+}
+
+.join h2{
+  text-align: center;
+  color: #EF93AD;
+  padding-bottom: 40px;
+  letter-spacing: 15px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif !important;
+}
+.user, .name, .tel{
+    position: relative
+}
+.psw{
+  position: relative;
+}
+.psw .chk{
+  position: relative;
+}
+.user>span, .psw>span{
+  display: block;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.user>span::after, .psw>span::after{
+  content: "\f069";
+  width: 15px;
+  height: 15px;
+  color: #EF93AD;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 900;
+  vertical-align: 7px;
+  margin-left: 7px;
+}
+
+.user input, .psw input{
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding-left: 20px;
+  caret-color: #EF93AD;
+  outline: none;
+;
+}
+.user input::placeholder, .psw input::placeholder{
+  padding-left: 5px;
+  color: #999;
+}
+.user input:focus, .psw input:focus{
+  outline: 2px solid #EF93AD;
+}
+
+.user>div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.user>div>button{
+  border-radius: 18px;
+  height: 50px;
+  white-space: nowrap;
+  font-size: 0.5rem;
+  padding: 5px 15px;
+  margin-left: 15px;
+  transition: 0.6s;
+  cursor: pointer;
+  outline: none;
+}
+
+.user>div>button:hover{
+  background:  #EF93AD;
+  color: white;
+}
+.user>div>button:focus{
+  outline: #EF93AD;
+}
+.psw>small{
+  display: block;
+  padding: 15px;
+  text-align: left;
+  color: #666;
+}
+
+
+.name>div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.name > label{
+    display: block;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.name > label::after{
+  content: "\f069";
+  width: 15px;
+  height: 15px;
+  color: #EF93AD;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 900;
+  vertical-align: 7px;
+  margin-left: 7px;
+}
+.name input{
+  width: 60%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding-left: 20px;
+  caret-color: #EF93AD;
+  outline: none;
+
+}
+.name input:focus{
+  outline: 2px solid #EF93AD;
+}
+
+.gender{
+  width: 25%;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.gender label{
+  color: white;
+  font-weight: bold;
+  padding: 15px 0;
+}
+.gender input[type=radio]{
+  width: 15px;
+  height: 15px;
+}
+.gender input#radio{
+  display: none;
+}
+
+.gender input#radio + label::after{
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 20px;
+  background: white;
+  line-height: 17px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.gender input#radio:checked + label::after{
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 20px;
+  background: #EF93AD;
+  line-height: 17px;
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+  z-index: 66;
+
+}
+
+.tel p{
+  display: block;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  padding: 15px 0;
+}
+.tel p::after{
+  content: "\f069";
+  width: 15px;
+  height: 15px;
+  color: #EF93AD;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 900;
+  vertical-align: 7px;
+  margin-left: 7px;
+}
+.telcontainer{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.telcontainer select::-ms-expand {
+display: none; /*익플 10,11이상. 화살표 감추기*/
+}
+.telcontainer select{
+  position: relative;
+  width: 30%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding-left: 20px;
+  caret-color: #EF93AD;
+  color: #999;
+  outline: none;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+  position: relative;
+    cursor: pointer;
+}
+
+.telcontainer::before{
+  content: '\f0dd';
+  width: 25px;
+  height: 25px;
+  color: #EF93AD;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 900;
+  font-size: 2rem;
+  position: absolute;
+  top:10px;
+  left: 85px;
+
+}
+.telcontainer input{
+  width: 30%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding-left: 20px;
+  caret-color: #EF93AD;
+  outline: none;
+}
+
+.telcontainer select:focus, .telcontainer input:focus{
+  outline: 2px solid #EF93AD;
+}
+
+.email label{
+  display: block;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  padding: 15px 0;
+}
+.email label::after{
+  content: "\f069";
+  width: 15px;
+  height: 15px;
+  color: #EF93AD;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 900;
+  vertical-align: 7px;
+  margin-left: 7px;
+}
+
+.emailcontainer{
+  display: flex;
+  justify-content:space-between;
+  position: relative;
+}
+.emailcontainer span{
+  display: block;
+  margin-top: 18px;
+  color: #333;
+}
+.emailcontainer input{
+  width: 40%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding-left: 20px;
+  caret-color: #EF93AD;
+  outline: none;
+}
+
+.emailcontainer input:focus{
+    outline: 2px solid #EF93AD;
+}
+
+.emailcontainer select::-ms-expand {
+display: none; /*익플 10,11이상. 화살표 감추기*/
+}
+.emailcontainer select{
+  position: relative;
+  width: 15%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding-left: 5px;
+  margin-left: 5px;
+  caret-color: #EF93AD;
+  color: #999;
+  outline: none;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+  position: relative;
+    cursor: pointer;
+}
+
+
+.emailcontainer::before{
+  content: '\f0dd';
+  width: 25px;
+  height: 25px;
+  color: #EF93AD;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 900;
+  font-size: 1.3rem;
+  position: absolute;
+  top:15px;
+  right: 0px;
+
+}
+.year label{
+  display: block;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  padding: 15px 0;
+}
+.year label::after{
+  content: "\f069";
+  width: 15px;
+  height: 15px;
+  color: #EF93AD;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 900;
+  vertical-align: 7px;
+  margin-left: 7px;
+}
+.year_container{
+  display: flex;
+  justify-content: space-between;
+}
+.year_container input{
+  width: 30%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding-left: 20px;
+  caret-color: #EF93AD;
+  outline: none;
+}
+.year_container input:focus{
+    outline: 2px solid #EF93AD;
+}
+
+.agree{
+    width: 100%;
+    margin: 30px 0;
+    padding: 30px;
+    border: 1px solid #EF93AD;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.agree:hover{
+      background: rgba(255, 255, 255, 0.8);
+}
+
+.agreck label{
+  color:  #333;
+
+}
+
+.agreck input#checkbox {
+  display: none;
+}
+
+.agreck input#checkbox + label::before{
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  border: 1px solid #EF93AD;
+  vertical-align: -4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.agreck input#checkbox:checked + label::before{
+ content:"\f00c";
+ display: inline-block;
+ font-family: "Font Awesome 5 Free";
+ font-weight: 900;
+ display: inline-block;
+ background: white;
+ box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.05), inset -3px -3px  3px rgba(0, 0, 0, 0.05);
+ color: #EF93AD;
+ text-align: center;
+ font-size: 1.3rem;
+  vertical-align: -2px;
+}
+
+
+.btn{
+  width: 100%;
+  height: 50px;
+  transition: 0.7s;
+}
+
+.btn:hover{
+  background: #EF93AD;
+  color: white;
+}
+
+/*피드백*/
+.error{
+  border-color: red;
+  box-shadow: 0px 0px 6px rgba(255, 0, 0, 0.5);
+}
+
+
+.need{
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  font-size: 0.8rem;
+  color: #EF93AD;
+  display: none;
+}
+.need2{
+  position: absolute;
+  bottom: -5px;
+  left: 14px;
+  font-size: 0.8rem;
+  color: #EF93AD;
+    display: none;
+}

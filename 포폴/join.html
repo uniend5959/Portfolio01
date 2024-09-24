@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/join.css">
+  <script  src="./js/prefixfree.min.js"> </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/include.js"></script>
+  <script src="./js/join.js"></script>
+</head>
+<body>
+
+  <div w3-include-html="header.html"></div>
+
+
+  <div class="wrap">
+    <div class="join">
+        <h2>SIGN UP</h2>
+        <div class="join-container">
+          <div class="user">
+            <span>아이디</span>
+            <div>
+                <div class="need">필수 입력사항입니다.</div>
+                <input type="email"  name="email" placeholder="아이디를 입력하세요" class="info">
+                <button type="submit" name="button">아이디 중복확인</button>
+            </div>
+          </div>
+          <div class="psw">
+            <span>비밀번호</span>
+            <input type="password" placeholder="비밀번호를 입력하세요 "  class="info">
+            <small>영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자</small>
+            <div class="need2">필수 입력사항입니다.</div>
+          </div>
+
+          <div class="psw chk">
+            <span>비밀번호 확인</span>
+            <div class="need">필수 입력사항입니다.</div>
+            <input type="password" placeholder="비밀번호를 똑같이 입력하세요 "  class="info">
+          </div>
+
+          <div class="name">
+            <label for="id">이름</label>
+
+            <div>
+                <div class="need">필수 입력사항입니다.</div>
+              <input type="text" name="id"  class="info">
+              <div class="gender">
+                <input type="radio" id="radio" value="male" name="gender" >
+                <label for="male">남성</label>
+                <input type="radio" id="radio" name="gender" >
+                <label for="woman">여성</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="tel">
+            <p>휴대전화</p>
+              <div class="need">필수 입력사항입니다.</div>
+            <div class="telcontainer">
+              <select class="" name="tel" id="tel">
+                <option value="010">010</option>
+                <option value="011">011</option>
+              </select>
+              <input type="tel" maxlength="4"  class="info">
+              <input type="tel" maxlength="4"  class="info">
+            </div>
+          </div>
+
+          <div class="email">
+            <label for="email">이메일</label>
+            <div class="emailcontainer">
+              <input type="text" class="email_name info" > <span>@</span>
+              <input type="text" class="email_domain info" placeholder="직접입력">
+              <select class="" >
+                <option value="naver.com">naver</option>
+                <option value="daum.net">daum</option>
+                <option value="gmail.com">gmail</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="year">
+            <label for="year">생년월일</label>
+            <div class="year_container">
+              <input type="text" placeholder="YYYY" maxlength="4"  class="info">
+              <input type="text"  placeholder="MM" maxlength="2"  class="info">
+              <input type="text"  placeholder="DD" maxlength="2"  class="info">
+            </div>
+          </div>
+
+          <div class="agree" >
+            <div class="agreck" >
+              <input type="checkbox" id="checkbox" name="" value=""  class="info">
+              <label for="checkbox" >전체약관에 동의합니다.</label>
+            </div>
+          </div>
+
+
+          <button type="submit" name="button" class="btn">SIGN UP</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

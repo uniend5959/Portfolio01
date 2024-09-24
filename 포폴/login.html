@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>login</title>
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/labstyle.css">
+  <script  src="./js/prefixfree.min.js"> </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
+  <script src="./js/login.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+
+
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+      }
+    }
+  }
+
+  </script>
+
+  <script type="text/javascript">
+  $(function(){
+    $('.nav').click(function(){
+      $('.sub').slideToggle("slow");
+      $('.overay').slideToggle("slow");
+    });
+
+  });
+  </script>
+  <div w3-include-html="header.html"></div>
+
+
+  <div class="wrap">
+
+    <div class="login">
+
+
+
+
+      <form action="post">
+          <h2>LOGIN</h2>
+          <div>
+            <div class="user">
+              <div class="validation">필수 입력사항입니다.</div>
+              <span><i class="fas fa-user-circle"></i></span>
+              <input type="email"  name="email" placeholder="아이디를 입력하세요" class="red">
+            </div>
+            <div class="psw">
+              <div class="validation">필수 입력사항입니다.</div>
+              <span><i class="fas fa-lock"></i></span>
+              <input type="password" placeholder="비밀번호를 입력하세요 " class="red">
+            </div>
+            <div class="form_checkbox">
+              <input type="checkbox" id="checkbox" name="formck" value="formck" class="form_ck">
+              <label for="checkbox" class="form_lb">아이디 저장</label>
+            </div>
+            <div class="loginway">
+              <a href="" class="btn in">로그인</a>
+              <a href="" class="btn"> <img src="https://seeklogo.com/images/K/kakaotalk-logo-274D191B7B-seeklogo.com.png" alt="">kakao 로그인</a>
+              <a href="" class="btn"><img src="https://play-lh.googleusercontent.com/jYtnK__ibJh9emODIgTyjZdbKym1iAj4RfoVhQZcfbG-DuTSHR5moHVx9CQnqg1yoco9" alt="">naver 로그인</a>
+              <a href="" class="btn"><span><i class="fab fa-google"></i></span>gogle 로그인</a>
+            </div>
+
+          </div>
+
+
+
+          <div class="find">
+            <p>아이디찾기</p>
+            <p>비밀번호 찾기 </p>
+            <p> 회원가입</p>
+          </div>
+
+
+
+
+
+      </form>
+    </div>
+  </div>
+
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+</html>
